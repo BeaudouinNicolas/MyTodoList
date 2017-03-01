@@ -46,7 +46,7 @@ public class TodoActivity extends Activity implements View.OnClickListener {
         SharedPreferences setting = getSharedPreferences(PREFS_NAME, 0);
         todoItems.add(setting.getString("todoItem", ""));
 
-        // insertion des données a l'intérieur de la list view
+        // insertion des données a l'intérieur de la list view avec et sans SharedPreferences
         historicText.setAdapter(new ArrayAdapter<String>(getApplicationContext(),
                 android.R.layout.simple_list_item_1,
                 /*values.getValues()*/ todoItems));

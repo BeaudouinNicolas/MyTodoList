@@ -44,8 +44,10 @@ public class AddTodoActivity extends Activity implements View.OnClickListener {
                 SharedPreferences.Editor editor = settings.edit(); // création d'un editor pour
                                                                     // l'ajout/suppresion/modification
                                                                     // du shared preferences
+                // création d'un objet Set, utilisable dans le SHaredPreferences
                 Set<String> todoItemValue = new HashSet<String>();
                 todoItemValue.add(todoText.getText().toString());
+                // le premier paramètre est la clé, le second la valeur
                 editor.putStringSet("todoItem", todoItemValue);
 
                 //commit des données à insérer
