@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="349dp"
+        android:id="@+id/historicTextListView"
+        android:layout_weight="1" />
+
+    <Button
+        android:text="Ajouter une to do"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddTodo"
+        android:layout_weight="0.11" />
+
+    <Button
+        android:text="Vider la liste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDropList" />
+</LinearLayout>
