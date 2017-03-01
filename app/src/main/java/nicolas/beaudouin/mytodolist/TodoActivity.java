@@ -57,6 +57,9 @@ public class TodoActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.btnDropList:
                 values.dropValues();
+                historicText.setAdapter(new ArrayAdapter<String>(getApplicationContext(),
+                        android.R.layout.simple_list_item_1,
+                        values.getValues()));
                 break;
         }
 
